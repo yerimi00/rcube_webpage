@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import styled from "styled-components";
 
 function App() {
   return (
@@ -25,7 +26,7 @@ const Wrapper = styled.div`
 const Container = styled.div`
   width: 100vw;
   height: 100vh;
-  background: ${({ theme }) => theme.backgroundColors.mainColor};
+
   overflow-y: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
