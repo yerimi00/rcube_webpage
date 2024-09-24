@@ -1,12 +1,21 @@
 import { Route, Routes } from "react-router-dom";
-import styled from "styled-components";
+import Main from "./pages/Main";
+import styled, { ThemeProvider } from "styled-components";
+import { BrowserRouter as Router } from "react-router-dom";
+import theme from "./styles/theme";
 
 function App() {
   return (
     <>
-      <Wrapper>
-        <Container>{/* <Route path="/" element={} /> */}</Container>
-      </Wrapper>
+      <ThemeProvider theme={theme}>
+        <Wrapper>
+          <Container>
+            <Routes>
+              <Route path="/" element={<Main />} />
+            </Routes>
+          </Container>
+        </Wrapper>
+      </ThemeProvider>
     </>
   );
 }

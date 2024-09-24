@@ -1,5 +1,7 @@
 const theme = {
-  colors: {},
+  colors: {
+    mainColor: "#28887A",
+  },
   backgroundColors: {},
   // mobile: `375px`,
   mobile: `430px`,
