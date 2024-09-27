@@ -48,7 +48,7 @@ const Menu = styled.div`
 const MenuBtn = styled.div``;
 
 const LoginBtn = styled.div`
-  color: white;
+  color: gray;
   background-color: ${({ theme }) => theme.colors.mainColor};
   border-radius: 5px;
   font-size: 1rem;
